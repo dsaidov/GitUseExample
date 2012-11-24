@@ -25,11 +25,18 @@
                                     <action selector="clickTheButton:" destination="2" eventType="touchUpInside" id="sVD-2i-zQn"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MCB-Gf-4X0">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="u65-JI-sNC" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="faA-hY-Pie"/>
+                            <constraint firstItem="MCB-Gf-4X0" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="K9B-40-ObE"/>
+                            <constraint firstItem="MCB-Gf-4X0" firstAttribute="top" secondItem="3" secondAttribute="top" constant="154" id="gpG-pU-bz6"/>
                             <constraint firstItem="u65-JI-sNC" firstAttribute="top" secondItem="3" secondAttribute="top" constant="208" id="z2R-zk-jKC"/>
+                            <constraint firstItem="MCB-Gf-4X0" firstAttribute="centerX" secondItem="u65-JI-sNC" secondAttribute="centerX" type="default" id="zfM-Qe-1Lm"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -37,6 +44,17 @@
             </objects>
         </scene>
     </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="clickTheButton:"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
